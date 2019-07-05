@@ -11,6 +11,9 @@
    ./dependencies.sh
   ```
 3) Copy the folder gui in the repository to <Your path >/kaldi/egs   # where 'Your path' is whbere kaldi folder resides
+  ```
+   cp -r gui <Your path>/kaldi/egs/.
+  ```
 
 4) Change the directory to <Your path>/kaldi/egs/gui/s1
   ```
@@ -22,4 +25,5 @@
  ./gui.py    # Runs using python2.7(version 2)
  ```
 
-## Note: sample_data folder contains clips to test the gui. (chunks taken from TCS recordings) 
+### Note: sample_data folder contains clips to test the gui. (chunks taken from TCS recordings) 
+
