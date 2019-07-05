@@ -1,0 +1,10 @@
+--splice-config=/home/sachin/kaldi/egs/gui/s1/acoustic_model_aspire/conf/splice.conf
+--cmvn-config=/home/sachin/kaldi/egs/gui/s1/acoustic_model_aspire/conf/online_cmvn.conf
+--lda-matrix=/home/sachin/kaldi/egs/gui/s1/acoustic_model_aspire/ivector_extractor/final.mat
+--global-cmvn-stats=/home/sachin/kaldi/egs/gui/s1/acoustic_model_aspire/ivector_extractor/global_cmvn.stats
+--diag-ubm=/home/sachin/kaldi/egs/gui/s1/acoustic_model_aspire/ivector_extractor/final.dubm
+--ivector-extractor=/home/sachin/kaldi/egs/gui/s1/acoustic_model_aspire/ivector_extractor/final.ie
+--num-gselect=5
+--min-post=0.025
+--posterior-scale=0.1
+--max-remembered-frames=1000

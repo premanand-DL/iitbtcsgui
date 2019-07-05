@@ -1,0 +1,24 @@
+clear; clc;close all;
+
+fpitch = 'fpitch.mat';
+fvad = 'fvad';
+fout = 'fout.wav';
+
+fil = 'clean.wav';
+
+
+
+vad_seg = vad(fil, 'fpitch.mat', 'fvad', 0.1, 'fout.wav');
+
+vad_seg
+
+flen=fs/40;
+fsh10=fs/100;
+nfr10=floor((length(data)-(flen-fsh10))/fsh10);
+
+vad_decision = zeros(length(data),1);
+for i = 1 : size(vad_seg, 1)
+    vad_decision(vad_seg(i,1) * fsh10 + 1 : vad_seg(i,2) * fsh10 + flen) = 1;
+end
+
+plot(data), hold on, plot(vad_decision), hold off

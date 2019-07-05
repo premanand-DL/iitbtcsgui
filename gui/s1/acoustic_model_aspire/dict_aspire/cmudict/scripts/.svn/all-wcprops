@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/p/cmusphinx/code/!svn/ver/12857/trunk/cmudict/scripts
+END
+test_cmudict.pl
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/p/cmusphinx/code/!svn/ver/12857/trunk/cmudict/scripts/test_cmudict.pl
+END
+make_baseform.pl
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/p/cmusphinx/code/!svn/ver/9658/trunk/cmudict/scripts/make_baseform.pl
+END
+CompileDictionary.sh
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/p/cmusphinx/code/!svn/ver/9658/trunk/cmudict/scripts/CompileDictionary.sh
+END
+sort_cmudict.pl
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/p/cmusphinx/code/!svn/ver/9658/trunk/cmudict/scripts/sort_cmudict.pl
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/p/cmusphinx/code/!svn/ver/11348/trunk/cmudict/scripts/README.txt
+END
+test_dict.pl
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/p/cmusphinx/code/!svn/ver/9658/trunk/cmudict/scripts/test_dict.pl
+END

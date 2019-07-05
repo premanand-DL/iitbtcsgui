@@ -1,0 +1,134 @@
+# exp/enhan/beamform_1_2_3_4/log/beamform.1.sh 
+# Started at Thu Jul  4 16:43:06 IST 2019
+#
+Processing config file /home/sachin/kaldi/egs/gui/s1/conf/beamformit.cfg
+Parameters settings(some of them):
+ Mandatory parameters:
+  scroll_size: 250
+  window_size: 500
+  source_dir: /home/sachin/kaldi/egs/gui/s1/sample_data/chunk3
+  show_id: recording
+  result_dir: enhan/demo1/beamform
+  channels_file: exp/enhan/beamform_1_2_3_4/channels_4
+ Optional parameters:
+  uem_file: 
+  delay_variance: 5
+  ovl_variance: 20
+  do_optimum delays: 1
+  do_indiv_channels: 0
+  output_format: 0
+  do_xcorr_reference: 1
+  nbest_amount: 4
+  reference_channel: 0
+  Transition nbest probability: 25.000000
+  Percentage of noisy xcorr values: 10.000000
+Creating necessary directories
+Opening the input channels
+Extracting channel information for show recording
+File 0: recording.CH1.wav
+File 1: recording.CH2.wav
+File 2: recording.CH3.wav
+File 3: recording.CH4.wav
+Filename: /home/sachin/kaldi/egs/gui/s1/sample_data/chunk3/recording.CH1.wav
+File /home/sachin/kaldi/egs/gui/s1/sample_data/chunk3/recording.CH1.wav (1 channels) open
+Filename: /home/sachin/kaldi/egs/gui/s1/sample_data/chunk3/recording.CH2.wav
+File /home/sachin/kaldi/egs/gui/s1/sample_data/chunk3/recording.CH2.wav (1 channels) open
+Filename: /home/sachin/kaldi/egs/gui/s1/sample_data/chunk3/recording.CH3.wav
+File /home/sachin/kaldi/egs/gui/s1/sample_data/chunk3/recording.CH3.wav (1 channels) open
+Filename: /home/sachin/kaldi/egs/gui/s1/sample_data/chunk3/recording.CH4.wav
+File /home/sachin/kaldi/egs/gui/s1/sample_data/chunk3/recording.CH4.wav (1 channels) open
+NumChannels is: 4, sampling rate is 48000
+Opening output channels
+Opening enhan/demo1/beamform/recording.wav file
+Marginst for delays in frames: 1440 in ms: 30
+Initializing...Total number of delays to be computed: 14
+Using an fft window of 32768 points for the window of 24000 points
+finished
+Setting the reference channel
+Determining the reference channel via average xcorr values
+Computing the average xcorr between 0 and 1
+Average xcorr final: 0.066178
+Computing the average xcorr between 0 and 2
+Average xcorr final: 0.062518
+Computing the average xcorr between 0 and 3
+Average xcorr final: 0.067952
+Computing the average xcorr between 1 and 2
+Average xcorr final: 0.062425
+Computing the average xcorr between 1 and 3
+Average xcorr final: 0.062752
+Computing the average xcorr between 2 and 3
+Average xcorr final: 0.065783
+Selected channel 0 as the reference channel
+Computing the scalling factor for the output signal
+Calculating the maximum values of the signal, to do a signal adjustment
+Set the total number of segments from 10 to 1 for computing scalling factor, with segment duration 192000
+Processing channel 0
+The Median maximum energy for channel 0 is 0.999969
+Set the total number of segments from 10 to 1 for computing scalling factor, with segment duration 192000
+Processing channel 1
+The Median maximum energy for channel 1 is 0.999969
+Set the total number of segments from 10 to 1 for computing scalling factor, with segment duration 192000
+Processing channel 2
+The Median maximum energy for channel 2 is 0.999969
+Set the total number of segments from 10 to 1 for computing scalling factor, with segment duration 192000
+Processing channel 3
+The Median maximum energy for channel 3 is 0.999969
+Weighting calculated to adjust the signal: 0.300009
+Finished computation of the scalling factor
+Setting initial Channel Weights...finishedFrames: 192000
+Rate 250, window 500 frames 192000 samplerate 48000
+Processing 0.250 s. (7.143 percent)Processing 0.500 s. (14.286 percent)Processing 0.750 s. (21.429 percent)Processing 1.000 s. (28.571 percent)Processing 1.250 s. (35.714 percent)Processing 1.500 s. (42.857 percent)Processing 1.750 s. (50.000 percent)Processing 2.000 s. (57.143 percent)Processing 2.250 s. (64.286 percent)Processing 2.500 s. (71.429 percent)Processing 2.750 s. (78.571 percent)Processing 3.000 s. (85.714 percent)Processing 3.250 s. (92.857 percent)
+Finished computing delays
+Computing the optimum delays
+Threshold is 0.037225 (min: 0.031228 max 0.234482)
+Thresholding noisy frames lower than 0.037225
+  Aplying a noise thresholding
+  Finished applying a noise filter
+Deconding Each channel Independently to find the 2-best delays from each N-best inputComputing the 1st best delay
+First best start
+
+Trans_weight selected to 25.000000
+Starting Viterbi with 4 channels and 4 N-best values per channel
+Computing Viterbi for channel 0
+   Segmentation Over with Viterbi score = -97.834749
+Computing Viterbi for channel 1
+   Segmentation Over with Viterbi score = -12.061438
+Computing Viterbi for channel 2
+   Segmentation Over with Viterbi score = -10.179401
+Computing Viterbi for channel 3
+   Segmentation Over with Viterbi score = -11.708375
+First best finish
+Computing the 2nd best delay
+second best start
+
+Trans_weight selected to 25.000000
+Starting Viterbi with 4 channels and 4 N-best values per channel
+Computing Viterbi for channel 0
+   Segmentation Over with Viterbi score = -14097.834749
+Computing Viterbi for channel 1
+   Segmentation Over with Viterbi score = -15.571406
+Computing Viterbi for channel 2
+   Segmentation Over with Viterbi score = -15.981871
+Computing Viterbi for channel 3
+   Segmentation Over with Viterbi score = -1019.350889
+second best finish
+Done computing the 2nd best delay
+Finished decoding both best paths, writting out results
+
+Decoding all 2-best input delays to find the optimum path in coherence with all channels
+Total number of possible delays: 16
+Starting the viterbi
+   Segmentation Over with Viterbi score = -52.476917
+Finished computing optimum delays
+Finished computing the optimum delays
+Printing delays to file
+Summing up all the channels
+Memory allocation for all data
+Finished allocating memory
+finished writting files
+Sinc-ed all files' outputs for the 0 best
+Finished summing up all the channels
+Closing all used channels
+Finished closing all the channels
+# Accounting: time=10 threads=1
+# Ended (code 0) at Thu Jul  4 16:43:16 IST 2019, elapsed time 10 seconds

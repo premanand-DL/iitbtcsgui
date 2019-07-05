@@ -1,0 +1,29 @@
+The document includes the MATLAB codes for various dereverberation algorithms discussed in
+
+'SPEECH DEREVERBERATION USING NMF WITH REGULARIZED ROOM IMPULSE RESPONSE', ICASSP 2017
+
+
+The folder has folowing files,
+|
+|>main_function.m
+|>convlr.m
+|>dereverb_kl_divergence_new.m
+|>DereverbKLdivFrequencyEnvelope.m
+|>DereverbKLdivSpeechModelFrequencyEnvelope.m
+|>DereverbNMF_Hlate.m
+|>DereverbNMFSpeech_Hlate.m
+|>norm_wav.m
+|>readme.txt
+|>stft.m
+|>sa1.wav (sample TIMIT sentence)
+|>RIR_SimRoom3_far_AnglA.wav (sample RIR from REVERB challenge 2014)
+
+
+Run 'main_function.m' to obtain dereverb speech and RIR estimates obtained for various constraints on RIR. The function also plots the narrowband RIR estimates for various methods.
+
+The STFT and RIR parameters are set in 'parm' as shown below,
+parm.analysis = %window length (1024 corresonds to 64ms when fs = 16000 samples/s)
+parm.hop =  %hop size
+parm.win =  % window type
+parm.Nframe = % number of frames allocated for RIR
+parm.Hlate = % number of frames to be considered as early part of RIR
