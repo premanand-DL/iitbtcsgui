@@ -1,7 +1,7 @@
 # "This is just a README, the code folder for the GUI is yet to be uploaded as there are some issues with the front-end"
 
 
-# Interface for Running Speech Enhancement and Recognition on simulated data
+# Interface for Running Speech Enhancement and Recognition on Simulated Data using RIR genrator[1]
 
 ## The interface has 3 section:
 * Choosing multi-channel file
@@ -110,4 +110,7 @@ Here are the steps:
 * After dereverberation, the enhanced file is stored at ./dereverb with ```<file name>/<method>/<channel no>``` as file name.
 * After Beamforming, the enhanced file is stored at ./beamformed with ```<file name>/<method>``` as file name.
 
+```
+[1] https://github.com/iitbdaplab/multi-channel_audio_simulator
+```
 
