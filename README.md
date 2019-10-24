@@ -1,4 +1,4 @@
-# This is just a README, the code folder is GUI is yet to be uploaded as there are some issues with the front-end
+# "This is just a README, the code folder for the GUI is yet to be uploaded as there are some issues with the front-end"
 
 
 # Interface for Running Speech Enhancement and Recognition on simulated data
