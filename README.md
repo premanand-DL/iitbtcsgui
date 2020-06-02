@@ -1,5 +1,3 @@
-# "This is just a README, the code folder for the GUI is yet to be uploaded as there are some issues with the front-end"
-
 
 # Interface for Running Speech Enhancement and Recognition on Simulated Data using RIR genrator[1]
 
